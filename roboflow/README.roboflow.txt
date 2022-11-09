@@ -1,8 +1,8 @@
 
-Chicken Detection - v5 2022-11-08 2:36pm
+Chicken Detection - v6 2022-11-09 4:50pm
 ==============================
 
-This dataset was exported via roboflow.com on November 8, 2022 at 1:52 PM GMT
+This dataset was exported via roboflow.com on November 9, 2022 at 1:28 PM GMT
 
 Roboflow is an end-to-end computer vision platform that helps you
 * collaborate with your team on computer vision projects
@@ -12,7 +12,7 @@ Roboflow is an end-to-end computer vision platform that helps you
 * export, train, and deploy computer vision models
 * use active learning to improve your dataset over time
 
-It includes 343 images.
+It includes 368 images.
 Chicken are annotated in YOLO v7 PyTorch format.
 
 The following pre-processing was applied to each image:

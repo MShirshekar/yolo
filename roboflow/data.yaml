@@ -1,6 +1,6 @@
-train: ../yolov7/dataset_roboflow/train/images
-val: ../yolov7/dataset_roboflow/valid/images
-test: ../yolov7/dataset_roboflow/test/images
+train: ../train/images
+val: ../valid/images
+test: ../test/images
 
 nc: 1
 names: ['chicken']
@@ -8,6 +8,6 @@ names: ['chicken']
 roboflow:
   workspace: fum-icce
   project: chicken-detection-z6wni
-  version: 5
+  version: 6
   license: MIT
-  url: https://universe.roboflow.com/fum-icce/chicken-detection-z6wni/dataset/5
+  url: https://universe.roboflow.com/fum-icce/chicken-detection-z6wni/dataset/6
