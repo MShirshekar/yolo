@@ -1,0 +1,22 @@
+
+python detect.py --weights train/exp/weights/best.pt --conf 0.3 --source dataset/6.mp4
+
+
+
+
+
+
+#Detection on images with gpu:  python detect.py --weights yolov7.pt --conf 0.25 --img-size 640 --source mem5.jpg --device 0 
+
+#Detection on images with cpu:  python detect.py --weights yolov7.pt --conf 0.25 --img-size 640 --source mem5.jpg --device cpu 
+
+#Detection on videos with gpu:  python detect.py --weights yolov7.pt --conf 0.25 --img-size 640 --source mem5.mp4 --device 0 
+
+#Detection on videos with cpu:  python detect.py --weights yolov7.pt --conf 0.25 --img-size 640 --source mem5.mp4 --device cpu 
+
+#Detection on internal webcam with gpu:  python detect.py --weights yolov7.pt --conf 0.25 --img-size 640 --source 0 
+#Detection on external webcam with gpu:  python detect.py --weights yolov7.pt --conf 0.25 --img-size 640 --source 1 
+
+
+
+python train.py --workers 8 --device 0 --batch-size 32 --data dataset_roboflow\data.yaml --img 640 640 --cfg cfg/training/yolov7.yaml --weights 'yolov7_training.pt' --name yolov7-custom --hyp data/hyp.scratch.custom.yaml
